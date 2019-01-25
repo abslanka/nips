@@ -1,0 +1,17 @@
+{
+  "name": "nips",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build:server": "lerna run build --scope={@nips/common,@nips/server}",
+    "start:server": "npm -C ./packages/server run start"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "lerna": "^3.10.7",
+    "typescript": "^3.2.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
